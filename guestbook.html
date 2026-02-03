@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>给我留言</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: 40px auto;
+      background: #f8f9fa;
+      color: #333;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #2c3e50;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>📝 给我留言</h1>
+    
+    <!-- 表单：提交到你的 Formspree 地址 -->
+    <form action="https://formspree.io/f/mwvqjbqg" method="POST">
+      <input type="text" name="name" placeholder="你的战狼id...（必填）" required>
+      <textarea name="message" placeholder="想对bvvd母亲说的话...（必填）" rows="5" required></textarea>
+      <button type="submit">发送留言</button>
+    </form>
+
+    <a href="index.html" class="back">← 返回首页</a>
+  </div>
+</body>
+</html>
